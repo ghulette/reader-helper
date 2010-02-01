@@ -1,0 +1,25 @@
+Reader Helper is a simple, tiny program that allows Apple's Safari browser to
+add RSS subscriptions to Google Reader with one click. If you use Safari as
+your main browser, and want to use Google Reader, you will want to use this
+program.
+
+Reader Helper is a much simpler version of reader-notifier
+[http://code.google.com/p/readernotifier/]. No Growl, no downloading, not even
+notifications. If you need that functionality, check out that project instead.
+
+
+To build:
+
+Just open the project in Xcode and build it.  Hope for the best.
+
+
+To install and use:
+
+To install Reader Helper simply download the latest bundle, double-click on
+the disk image that appears, and drag the Reader Helper application file to
+your Applications folder (or wherever). Then, in Safari go to Preferences and
+select the RSS tab. Change "Default RSS Reader" to Reader Helper. Now whenever
+you click RSS links in Safari (or the blue RSS button in the address bar),
+Reader Helper will helpfully open Google Reader with the link. Google Reader
+will ask you if you want to subscribe to the feed (you need to confirm before
+the subscription is added).
