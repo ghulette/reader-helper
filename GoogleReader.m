@@ -13,11 +13,11 @@
 
 +(void)subscribeToFeed:(NSString *)feedURL
 {
-	NSString *apiStr = @"http://www.google.com/reader/preview/*/feed/";
+	NSString *apiStr = @"https://www.google.com/reader/view/feed/";
 	CFStringRef feedStr = CFURLCreateStringByAddingPercentEscapes(NULL, (CFStringRef)feedURL, NULL, (CFStringRef)@";/?:@&=+$,", kCFStringEncodingUTF8);
-	NSString *cmdStr = [apiStr stringByAppendingString:[NSString stringWithFormat:@"%@", feedStr]];
-	NSLog(@"Command: %@", cmdStr);
-	[[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:cmdStr]];
+	NSString *urlStr = [apiStr stringByAppendingString:[NSString stringWithFormat:@"%@", feedStr]];
+	// NSLog(@"Loading Google Reader URL: %@", urlStr);
+	[[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:urlStr]];
 }
 
 @end
